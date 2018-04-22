@@ -15,7 +15,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Width (mm)"
+        android:hint="Width (m)"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -34,7 +34,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="30dp"
         android:ems="10"
-        android:hint="Height (mm)"
+        android:hint="Height (m)"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         android:textSize="24sp"
@@ -60,12 +60,12 @@
         app:layout_constraintTop_toBottomOf="@+id/result" />
 
     <Button
-        android:id="@+id/subtract"
+        android:id="@+id/clear_num"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@color/colorAccent"
-        android:text="-"
+        android:text="C"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -74,36 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/multiply" />
-
-    <Button
-        android:id="@+id/clear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:background="@color/colorAccent"
-        android:text="C"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/subtract"
-        app:layout_constraintStart_toEndOf="@+id/subtract" />
-
-    <Button
-        android:id="@+id/sum"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:background="@color/colorAccent"
-        android:text="+"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textAppearance="@style/TextAppearance.AppCompat"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp"
-        app:layout_constraintBaseline_toBaselineOf="@+id/subtract"
-        app:layout_constraintEnd_toStartOf="@+id/subtract" />
 
     <TextView
         android:id="@+id/result"
